@@ -1,11 +1,11 @@
 import * as React from 'react';
 import style from './style.module.scss';
 
-class Button extends React.Component {
+class Button extends React.Component<{ texto: string}> {
     render() {
         return(
             <button className={style.botao}>
-                Button
+                {this.props.texto}
             </button>
         )
     }
